@@ -25,7 +25,7 @@ public class CurrencyController {
     }
 
 //  @Scheduled(cron = "0 0 */3 * * *")//every 3 hour
-    @Scheduled(cron = "*/10 * * * * *" )//every 10 seconds, for test
+    @Scheduled(cron = "0 */5 * * * *" )//every 10 seconds, for test
     @GetMapping("/currency")
     public Currency getCurrencies(){
         String url = "https://api.exchangeratesapi.io/latest";
